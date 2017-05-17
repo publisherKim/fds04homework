@@ -1,0 +1,36 @@
+.wrapper {
+    position: relative
+}
+
+.wrapper:after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+.wrapper div {
+    width: 25%;
+    text-align: center;
+    line-height: 200px;
+    float: left;
+}
+
+.wrapper .type1 {
+    background: green;
+}
+
+.wrapper .type2 {
+    background: orange;
+}
+
+.wrapper .type3 {
+    background: red;
+}
+
+.wrapper .type4 {
+    background: blue;
+}
+
+.wrapper .type5 {
+    background: pink;
+}

@@ -1,11 +1,10 @@
 .wrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
 }
 
 .wrapper div {
     width: 25%;
-    height: 200px;
     text-align: center;
     line-height: 200px;
 }
@@ -30,7 +29,66 @@
     background: pink;
 }
 
-.wrapper div::nth-child(n+1)::nth-child(n+4) {
-    justify-content: flex-end;
-    flex-flow: row wrap;
+.wrapper div:nth-child(1) {
+    order: 4;
+}
+
+.wrapper div:nth-child(2) {
+    order: 8;
+}
+
+.wrapper div:nth-child(3) {
+    order: 12;
+}
+
+.wrapper div:nth-child(4) {
+    order: 16;
+}
+
+.wrapper div:nth-child(5) {
+    order: 2;
+}
+
+.wrapper div:nth-child(6) {
+    order: 3;
+}
+
+.wrapper div:nth-child(7) {
+    order: 6;
+}
+
+.wrapper div:nth-child(8) {
+    order: 7;
+}
+
+.wrapper div:nth-child(9) {
+    order: 11;
+}
+
+.wrapper div:nth-child(10) {
+    order: 10;
+}
+
+.wrapper div:nth-child(11) {
+    order: 15;
+}
+
+.wrapper div:nth-child(12) {
+    order: 14;
+}
+
+.wrapper div:nth-child(13) {
+    order: 1;
+}
+
+.wrapper div:nth-child(14) {
+    order: 5;
+}
+
+.wrapper div:nth-child(15) {
+    order: 9;
+}
+
+.wrapper div:nth-child(16) {
+    order: 13;
 }

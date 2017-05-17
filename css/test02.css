@@ -1,0 +1,36 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper div {
+    width: 25%;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+}
+
+.wrapper .type1 {
+    background: green;
+}
+
+.wrapper .type2 {
+    background: orange;
+}
+
+.wrapper .type3 {
+    background: red;
+}
+
+.wrapper .type4 {
+    background: blue;
+}
+
+.wrapper .type5 {
+    background: pink;
+}
+
+.wrapper div::nth-child(n+1)::nth-child(n+4) {
+    justify-content: flex-end;
+    flex-flow: row wrap;
+}

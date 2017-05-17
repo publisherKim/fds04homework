@@ -1,0 +1,85 @@
+html {
+    max-height: 800px;
+}
+
+.wrapper {
+    position: relative;
+    width: 800px;
+    max-height: 800px;
+}
+
+.wrapper:after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+.wrapper div {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    background: #fff;
+}
+
+.wrapper .type1 {
+    background: green;
+}
+
+.wrapper .type2 {
+    background: orange;
+}
+
+.wrapper .type3 {
+    background: red;
+}
+
+.wrapper .type4 {
+    background: blue;
+}
+
+.wrapper .type5 {
+    background: pink;
+}
+
+.wrapper div:nth-child(n+1):nth-child(-n+4) {
+    clear: both;
+    float: right;
+}
+
+.wrapper div:nth-child(n+13) {
+    clear: both;
+    float: left;
+}
+
+.wrapper div:nth-child(n+5):nth-child(odd):nth-child(-n+11) {
+    clear: both;
+}
+
+.wrapper div:nth-child(n+5):nth-child(-n+11) {
+    float: left;
+    position: relative;
+    top: -800px;
+    left: 200px;
+}
+
+.wrapper div:nth-child(n+7):nth-child(-n+8) {
+    position: relative;
+    top: -800px;
+    left: -200px;
+    float: right;
+}
+
+.wrapper div:nth-child(n+11):nth-child(-n+12) {
+    position: relative;
+    top: -800px;
+    left: -200px;
+    float: right;
+}
+
+.wrapper div:nth-child(n+13):nth-child(-n+16) {
+    position: relative;
+    top: -1600px;
+    clear: both;
+    float: left;
+}
